@@ -1,0 +1,8 @@
+# gitleaks config — entropy/regex secret scanning (complements psst vault-value matching).
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Project false positives (public IDs, fixtures). Add regexes/paths as needed."
+regexes = ['''workflow-run-id-fixture-placeholder''']
+paths = []
