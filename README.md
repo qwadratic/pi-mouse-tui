@@ -1,5 +1,11 @@
 # pi-mouse-tui — mouse nav, paging, last-workflow-trace for pi
 
+![demo: /trace viewer over real workflow runs](demo.gif)
+
+*42s demo against real `pi-dynamic-workflows` runs: `/trace` → run header + agent
+list → agent detail pager (PgUp/PgDn, `g`/`G`) → `esc` back → `/trace --done`.
+Regenerate: `DEMO_CWD=<project-with-runs> ./demo.sh && agg demo.cast demo.gif`.*
+
 Scouted first, built last. Three of four features need **zero code** (pi/terminal
 already cover them); the one real gap is quick access to the last executed
 `pi-dynamic-workflows` trace → the **`pi-last-trace`** extension in
